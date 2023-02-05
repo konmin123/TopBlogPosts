@@ -11,6 +11,7 @@ git clone git@github.com:konmin123/TopBlogPosts.git
 2. Создайте и активируйте вирутальное окружение:
 
 python -m venv venv
+
 source venv/Scripts/activate
 
 3. Установите зависимости:
@@ -22,6 +23,7 @@ pip install -r requirements.txt
 5. Проведите миграции:
 
 python manage.py makemigrations
+
 python manage.py migrate
 
 6. Создайте суперпользователя:
