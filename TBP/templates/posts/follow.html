@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+{% block content %}
+  <title>Статьи избранных авторов</title>
+  <h1>Статьи избранных авторов</h1>
+  {% for post in page_obj %}
+    {% include 'includes/post_frame.html' with show_group_link=True show_profile_link=True%}
+  {% endfor %}
+  {% include 'includes/paginator.html' %}
+{% endblock %}

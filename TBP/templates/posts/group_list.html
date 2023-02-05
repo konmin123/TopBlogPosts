@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block content %}
+  <title>Записи сообщества: {{ group }}</title>
+  <h1>{{ group }}</h1>
+  <p>{{ group.description }}</p>
+  {% for post in page_obj %}
+    {% include 'includes/post_frame.html' with show_group_link=False show_profile_link=True%}
+  {% endfor %}
+  {% include 'includes/paginator.html' %}
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+{% comment %} Колонки с отступом сверху и снизу {% endcomment %}
+<div class="row">
+  <h1>Технологии использованные при создании сайта.</h1>
+  <aside class="col-12 col-md-3">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Python 3.9
+      </li>
+      <li class="list-group-item">
+        Django 2.2.16
+      </li>
+      <li class="list-group-item">
+        Bootstrap 5
+      </li>
+      <li class="list-group-item">
+        Pillow 9.4.0
+      </li>
+    </ul>
+  </aside>
+  <article class="col-12 col-md-9">
+    <p>При разработке данного сайта использовались следующие технологии:
+      Язык программирования Python, фреймворк для создания вэб сайтов Django,
+      элементы оформления и таблицы стилей Bootstrap,
+      приложение для работы с файлами изображений Pillow,
+      приложение Django Debug Toolbar для отладки работы сайта,
+      библиотека dotenv позволяет безопасно добавить SECRET_KEY и включить режим отладки Debug.
+    </p>
+  </article>
+</div>
+{% endblock %}
