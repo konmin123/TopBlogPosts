@@ -6,7 +6,7 @@
 
 1. Склонируйте репозиторий:
 
-```git clone git@github.com:konmin123/TopBlogPosts.git```
+`git clone git@github.com:konmin123/TopBlogPosts.git`
 
 2. Создайте и активируйте вирутальное окружение:
 
